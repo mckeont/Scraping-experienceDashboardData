@@ -40,7 +40,7 @@ Click on one of the urls that show up for query. Each one is a tile for the map,
 https://services7.arcgis.com/Z0rixLlManVefxqY/arcgis/rest/services/MDC_Clinical_Outcome_Variables/FeatureServer/1/query
 
 Run the following code in your jupyter notebook:
-
+```python
 import requests
 import geopandas as gpd
 
@@ -84,3 +84,4 @@ gdf.to_file("MDC_full_shapefile", driver="ESRI Shapefile")
 
 print("Complete dataset downloaded.")
 print("Total features:", len(gdf))
+```
